@@ -11,7 +11,7 @@ body {
 
 button {
   background-color: #007AFF;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 25px;
   padding: 20px 40px;
@@ -21,7 +21,7 @@ button {
   width: 250px;
 }
 button:hover {
-  background-color: #006adb;
+  background-color: #007AFF;
 }
 
 #actions {
