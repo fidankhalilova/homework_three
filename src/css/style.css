@@ -9,6 +9,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.flex, #info .info-list, #info .info-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 button {
   background-color: #007AFF;
   color: white;
@@ -21,7 +27,7 @@ button {
   width: 250px;
 }
 button:hover {
-  background-color: #007AFF;
+  background-color: #0068d6;
 }
 
 #actions {
@@ -79,9 +85,6 @@ button:hover {
 }
 #info .info-p {
   max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 #info .info-p h2 {
   font-size: 28px;
@@ -94,11 +97,6 @@ button:hover {
   font-size: 17px;
   color: #333;
   margin-bottom: 40px;
-}
-#info .info-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 #info .info-list ul {
   list-style: none;

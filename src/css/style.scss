@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 $primary-blue: #007AFF;
-$primary-btn-blue: #007AFF;
+$primary-btn-blue: #0068d6;
 $primary-white: white;
 $fill-color: #b3d1ff;
 
@@ -13,6 +13,12 @@ $fill-color: #b3d1ff;
 
 body {
     font-family: "Inter", sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 button {
@@ -92,10 +98,8 @@ button {
     margin-bottom: 50px;
 
     .info-p {
+        @extend .flex;
         max-width: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
         h2 {
             font-size: 28px;
@@ -104,6 +108,7 @@ button {
             margin-bottom: 40px;
             line-height: 1.4;
         }
+
         p {
             font-size: 17px;
             color: #333;
@@ -112,9 +117,7 @@ button {
     }
 
     .info-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @extend .flex;
 
         ul {
             list-style: none;
@@ -128,6 +131,7 @@ button {
                 color: #000;
                 gap: 12px;
                 margin: 20px;
+
                 svg {
                     width: 20px;
                     height: 100%;
